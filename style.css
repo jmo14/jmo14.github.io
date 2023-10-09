@@ -1,12 +1,309 @@
-#ale{
-    border: 3px solid red;
+.fullsize{
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.halfsize{
+    width: auto;
+    height: 300px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.button{
+    height: 50px;
+    width: 75px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    z-index: 4;
+}
+
+img{
+    height: 100%;
+    object-fit: contain;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute;
+    z-index: 1;
+}
+
+#right-door{
+    height: 370px;
+    width: 136px;
+    top: 487px;
+    left: 531px;
+    position: absolute;
+    background-color: red;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    transform: skew(0deg, 12deg);
+    z-index: 2;
+}
+
+#left-door{
+    height: 370px;
+    width: 160px;
+    top: 455px;
+    left: 370px;
+    position: absolute;
+    background-color: red;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    transform: skew(0deg, 12deg);
+    z-index: 2;
+}
+
+#doormask{
+    height: 220px;
+    width: 300px;
+    top: 470px;
+    left: 371px;
+    position: absolute;
+    transform: skew(0deg, 12deg);
+    z-index: 3;
+  }
+
+#doormask:hover ~ #left-door{
+    top: 450px;
+    left: 373px;
+    transform-origin: left;
+    transform: rotateY(160deg) rotate(-1deg);
+}
+
+#doormask:hover ~ #right-door{
+    top: 505px;
+    left: 529px;
+    transform-origin: right;
+    transform: rotateY(160deg);
+}
+
+#question {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    top: 570px;
+    left: 410px;
+    position: relative;
+    color: white;
+    z-index: 2;
+  }
+
+#movie-yes{
+    top: 680px;
+    left: 400px;
+    z-index: 4;
+}
+
+#movie-no{
+    top: 680px;
+    left: 550px;
+    z-index: 1;
+}
+
+#toggle:checked ~ #movie-no {
+    display: block;
+}
+
+#movie-no-mask {
+    display: none;
+}
+
+.poster{
+    height: 280px;
+    width: 200px;
+    border-style: solid;
+    border-color: red;
+    z-index: 4;
+}
+
+#scream{
+    top: 250px;
+    left: 340px;
+    position: absolute;
+}
+
+#halloween{
+    top: 250px;
+    left: 660px;
+    position: absolute;
+}
+
+#exorcist{
+    top: 250px;
+    left: 980px;
+    position: absolute;
+}
+
+
+#snack-q{ 
+    height: 180px;
+    width: 350px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 3px;
     text-align: center;
-    margin: 50px;
+    top: 400px;
+    left: 535px;
+    position: absolute;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px; 
+    padding: 30px;
+    z-index: 3;
 }
-.ale-text{
-    font-family: Arial, Helvetica, sans-serif;
-    color: red;
+
+#snack-no{
+    top: 560px;
+    left: 800px;
+    position: absolute;
+    z-index: 3;
 }
-.fancy-text{
-    font-family: cursive;
+
+#snack-yes{
+    top: 560px;
+    left: 590px;
+    position: absolute;
+    z-index: 3;
+}
+
+body{
+    background-color: lightgray;
+}
+
+#milkduds{
+    height: 42px;
+    top: 284px;
+    left: 628px;
+    position: absolute;
+    width: 100;
+    background: url(MILKDUDS.png);
+    background-size: contain;
+    z-index: 4;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#milkduds:hover{
+    transform: rotate(15deg);
+}
+
+#milkduds:target{
+    display: none;
+}
+
+#milk-duds2{
+    height: 42px;
+    top: 354px;
+    left: 745px;
+    position: absolute;
+    width: 100;
+    background: url(MILKDUDS.png);
+    background-size: contain;
+    z-index: 4;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#milk-duds2:hover{
+    transform: rotate(15deg);
+}
+
+#milk-duds2:target{
+    display: none;
+}
+
+#ale8{
+    height: 81px;
+    width: 90px;
+    top: 233px;
+    left: 1076px;
+    position: absolute;
+    background: url(ALE8.png);
+    background-size: contain;
+    z-index: 4;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#ale8:hover{
+    transform: rotate(15deg);
+}
+
+#ale8:target{
+    display: none;
+}
+
+#register{
+    height: 67px;
+    width: 120px;
+    top: 404px;
+    left: 905px;
+    position: absolute;
+    background-color: gray;
+    z-index: 4;
+    cursor: pointer;
+}
+
+#checkout{
+    height: 180px;
+    width: 350px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 3px;
+    text-align: center;
+    top: 250px;
+    left: 535px;
+    position: relative;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px; 
+    padding: 30px;
+    z-index: 5;
+    display: none;
+}
+
+#toggle:checked ~ #checkout {
+    display: block;
+}
+
+#checkout-no{
+    top: 450px;
+    left: 830px;
+    position: absolute;
+    z-index: 6;
+}
+
+#checkout-yes{
+    top: 450px;
+    left: 620px;
+    position: absolute;
+    z-index: 6;
+}
+
+#toggle:checked ~ #checkout-no {
+    display: block;
+}
+
+#checkout-container-yes {
+    display: none;
+}
+
+#toggle:checked ~ #checkout-container-yes {
+    display: block;
+}
+
+#toggle:checked ~ #checkout-container-no {
+    display: block;
+}
+
+#checkout-container-no {
+    display: none;
 }

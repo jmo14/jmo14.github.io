@@ -13,13 +13,18 @@
 }
 
 .button{
-    height: 50px;
-    width: 75px;
+    height: 30px;
+    width: 50px;
     position: absolute;
     background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20%;
+    padding: 10px;
     color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+    text-align: center;
     z-index: 4;
 }
 
@@ -70,14 +75,14 @@ img{
     z-index: 3;
   }
 
-#doormask:hover ~ #left-door{
+#toggle:checked ~ #left-door{
     top: 450px;
     left: 373px;
     transform-origin: left;
     transform: rotateY(160deg) rotate(-1deg);
 }
 
-#doormask:hover ~ #right-door{
+#toggle:checked ~ #right-door{
     top: 505px;
     left: 529px;
     transform-origin: right;
@@ -100,46 +105,41 @@ img{
     z-index: 4;
 }
 
-#movie-no{
-    top: 680px;
-    left: 550px;
-    z-index: 1;
+#movie-yes-mask{
+    display: none;
 }
 
-#toggle:checked ~ #movie-no {
+#toggle:checked ~ #movie-yes-mask {
     display: block;
 }
 
-#movie-no-mask {
+#movie-no{
+    top: 680px;
+    left: 550px;
+    z-index: 5;
+}
+
+#movie-no-mask{
     display: none;
+}
+
+#toggle:checked ~ #movie-no-mask {
+    display: block;
 }
 
 .poster{
     height: 280px;
     width: 200px;
-    border-style: solid;
-    border-color: red;
-    z-index: 4;
-}
-
-#scream{
     top: 250px;
-    left: 340px;
     position: absolute;
+    z-index: 10;
 }
-
-#halloween{
-    top: 250px;
-    left: 660px;
+table {
+    left: 15px;
     position: absolute;
+    border-collapse: separate;
+    border-spacing: 320px;
 }
-
-#exorcist{
-    top: 250px;
-    left: 980px;
-    position: absolute;
-}
-
 
 #snack-q{ 
     height: 180px;

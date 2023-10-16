@@ -1,0 +1,43 @@
+/* body{
+    cursor: url(cursor.png), auto;
+} */
+body{
+    margin: 0px;
+}
+.fullsize{
+    width: 100vw;
+    height: 100vh;
+}
+
+#top{
+    background-color: white;
+    z-index: 1;
+}
+#bottom{
+    background-color: blue;
+    z-index: 1;
+}
+
+.line{
+    height: 100vh;
+    width: 10px;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+}
+
+#first{
+    left: 20vw;
+}
+
+#second{
+    left: 40vw;
+}
+
+#third{
+    left: 60vw;
+}
+
+#fourth{
+    left: 80vw;
+}

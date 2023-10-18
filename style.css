@@ -91,6 +91,20 @@ img{
     transform: rotateY(160deg);
 }
 
+#doormask:hover ~ #left-door{
+    border-color: white;
+    background-color: #931928;
+}
+
+#doormask:hover ~ #right-door{
+    border-color: white;
+    background-color: #931928;
+}
+
+#toggle{
+    display: none;
+}
+
 #question {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
@@ -136,6 +150,38 @@ img{
     position: absolute;
     z-index: 10;
 }
+
+#scream:hover{
+    border-color: #931928;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#halloween:hover > .sold-out{
+    display: block;
+}
+
+.sold-out{
+    height: 35px;
+    width: 170px;
+    position: absolute;
+    background-color: #931928;
+    padding: 10px;
+    margin-top: 50%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(-30deg);
+    z-index: 4; 
+    display: none;
+}
+
+#exorcist:hover > .sold-out{
+    display: block;
+}
+
+
 table {
     left: 15px;
     position: absolute;
@@ -381,6 +427,10 @@ body{
     cursor: pointer;
 }
 
+#register:hover{
+    transform: scale(1.2);
+}
+
 #one-snack{
     left: 310px;
     background-color: white;
@@ -493,12 +543,12 @@ body{
 }
 
 #restart{
-    height: 40px;
-    width: 100px;
-    padding: 10px;
+    height: 50px;
+    width: 080px;
+    padding: 20px;
     position: absolute;
     top: 540px;
-    left: 610px;
+    left: 510px;
     z-index: 8;
     display: none;
     transition:  0.1s ease;
@@ -507,4 +557,21 @@ body{
 #toggle-move:checked ~ #restart {
     display: block;
 }
+
+#outlink{
+    height: 70px;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    top: 540px;
+    left: 710px;
+    z-index: 8;
+    display: none;
+    transition:  0.1s ease;
+}
+
+#toggle-move:checked ~ #outlink {
+    display: block;
+}
+
 

@@ -1,6 +1,3 @@
-/* body{
-    cursor: url(cursor.png), auto;
-} */
 body{
     margin: 0px;
 }
@@ -10,12 +7,36 @@ body{
 }
 
 #top{
-    background-color: white;
-    z-index: 1;
+    background-color: red;
+    z-index: 5;
 }
+
+#boat-top{
+    height: 26vh;
+    width: 89vw;
+    position: absolute;
+    top: calc(100vh - 21.5vh);
+    left: 5vw;
+    background: url(boat-top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
 #bottom{
     background-color: blue;
     z-index: 1;
+}
+
+#boat-bottom{
+    height: 50vh;
+    width: 76vw;
+    position: absolute;
+    left: 12vw;
+    background: url(boat-bottom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
 }
 
 .line{
@@ -23,21 +44,120 @@ body{
     width: 10px;
     background-color: black;
     position: absolute;
-    z-index: 2;
+    top: 100vh;
+    z-index: 3;
 }
 
 #first{
     left: 20vw;
+    transition: top 0.3s ease;
+}
+
+#first:target{
+    top: 35vh;
+}
+
+#boot{
+    height: 20vh;
+    width: 20vw;
+    position: absolute;
+    top: 200vh;
+    left: 18vw;
+    background: url(boot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: top 0.3s ease;
+    z-index: 5; 
+}
+
+#first:target ~ #boot{
+    top: 135vh;
+    opacity: 100;
 }
 
 #second{
     left: 40vw;
+    transition: top 0.3s ease;  
+}
+
+#second:target{
+    top: 35vh;
+}
+
+#water-bottle{
+    height: 20vh;
+    width: 20vw;
+    position: absolute;
+    top: 200vh;
+    left: 36vw;
+    background: url(water-bottle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: top 0.3s ease;
+    transform: rotate(-25deg);
+    z-index: 5; 
+}
+
+#second:target ~ #water-bottle{
+    top: 120vh;
+    opacity: 100;
 }
 
 #third{
     left: 60vw;
+    transition: top 0.3s ease;
+}
+
+#third:target{
+    top: 35vh;
+}
+
+#fish{
+    height: 30vh;
+    width: 20vw;
+    position: absolute;
+    top: 200vh;
+    left: 54vw;
+    background: url(fish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: top 0.3s ease;
+    z-index: 5; 
+}
+
+#third:target ~ #fish{
+    top: 133vh;
+    opacity: 100;
 }
 
 #fourth{
     left: 80vw;
+    transition: top 0.3s ease;
 }
+
+#fourth:target{
+    top: 35vh;
+}
+
+#chest{
+    height: 20vh;
+    width: 20vw;
+    position: absolute;
+    top: 200vh;
+    left: 18vw;
+    background: url(chest.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: top 0.3s ease;
+    z-index: 5; 
+}
+
+#first:target ~ #chest{
+    top: 135vh;
+    opacity: 100;
+}
+

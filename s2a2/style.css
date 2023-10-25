@@ -31,7 +31,7 @@ body{
 }
 
 #boat-bottom{
-    height: 50vh;
+    height: 50vw;
     width: 76vw;
     position: absolute;
     left: 12vw;
@@ -103,7 +103,7 @@ body{
 }
 
 #second:target ~ #water-bottle{
-    top: 20vh;
+    top: 33vh;
     opacity: 100;
 }
 
@@ -117,7 +117,7 @@ body{
 }
 
 #fish{
-    height: 30vh;
+    height: 25vh;
     width: 20vw;
     position: absolute;
     top: 200vh;
@@ -149,7 +149,7 @@ body{
     width: 20vw;
     position: absolute;
     top: 200vh;
-    left: 18vw;
+    left: 70vw;
     background: url(chest.png);
     background-size: contain;
     background-repeat: no-repeat;

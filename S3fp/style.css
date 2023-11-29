@@ -1,0 +1,247 @@
+
+body{
+    background-color: #F1EFFA;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#size{
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+}
+
+@font-face {
+    font-family: porky;
+    src: url(PORKYS_.TTF);
+}
+
+.gradiant{
+    height: 100vw;
+    width: 100vw;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+#circle1{
+    left: -35vw;
+    top: 35vh;
+    background-image: radial-gradient(#66b6e2, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle2{
+    left: 35vw;
+    top: -25vw;
+    background-image: radial-gradient(#66b6e2, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle3{
+    left: 60vw;
+    top: 135vw;
+    background-image: radial-gradient(#b7d26c, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle4{
+    left: -50vw;
+    top: 105vw;
+    background-image: radial-gradient(#ffe8a2, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle5{
+    left: 20vw;
+    top: 85vw;
+    background-image: radial-gradient(#9d94c6, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle6{
+    left: 50vw;
+    top: 205vw;
+    background-image: radial-gradient(#ffe8a2, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle7{
+    left: 20vw;
+    top: 285vw;
+    background-image: radial-gradient(#66b6e2, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle8{
+    left: -30vw;
+    top: 330vw;
+    background-image: radial-gradient(#b7d26c, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle9{
+    left: -40vw;
+    top: 250vw;
+    background-image: radial-gradient(#c6bee8, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle10{
+    left: -30vw;
+    top: 165vw;
+    background-image: radial-gradient(#66b6e2, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle11{
+    left: 30vw;
+    top: 375vw;
+    background-image: radial-gradient(#66b6e2, rgb(250, 118, 149, 0) 70%);
+}
+
+#circle12{
+    left: -30vw;
+    top: -50vw;
+    background-image: radial-gradient(#b7d26c, rgb(250, 118, 149, 0) 70%);
+}
+
+
+
+
+
+h1{
+    font-family: porky;
+    text-align: center;
+    font-size: 13vw;
+    color: #c6bee8;
+    -webkit-text-stroke-width: .25vw;
+    -webkit-text-stroke-color: white;
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: .15vw;
+    -webkit-text-stroke-color: #9d94c6;
+    font-size: 8vw;
+    padding: 5vw;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5vw;
+}
+
+.comic{
+    height: 40vw;
+    width: 40vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    border-style: solid;
+    border-color: white;
+    border-width: 1vw;
+}
+
+#c1{
+    background-image: url(coatcomic1.PNG);
+}
+
+#c2{
+    background-image: url(coatcomic2.PNG);
+}
+
+#c3{
+    background-image: url(coatcomic3.PNG);
+}
+
+#c4{
+    background-image: url(coatcomic4.PNG);
+}
+
+#c5{
+    background-image: url(coatcomic5.PNG);
+}
+
+#c6{
+    background-image: url(coatcomic6.PNG);
+}
+
+#c7{
+    background-image: url(coatcomic7.PNG);
+}
+
+#c8{
+    background-image: url(coatcomic8.PNG);
+}
+
+.button{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    background-color: #66b6e2;
+    border-radius: 10%;
+    color: white;
+    text-decoration: none;
+    font-size: 5vw;
+}
+
+#yes{
+    position: relative;
+    left: 10vw;
+}
+
+#no{
+    position: relative;
+    left: 35vw;
+}
+
+.phone{
+    height: 40vw;
+    width: 24vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    border-style: solid;
+    border-color: white;
+    border-width: 1vw;
+    margin-top: 10vw;
+}
+
+#p1{
+    background-image: url(connecting.jpg);
+}
+
+#p2{
+    background-image: url(connected.jpg);
+}
+
+#p3{
+    background-image: url(notif.jpg);
+}
+
+#connect{
+    left: 35vw;
+    width: 25vw;
+    position: relative;
+    background-color: #c6bee8;
+    border-radius: 45vw;
+    text-align: right;
+    padding: 4vw 0;
+    padding-right: 5vw;
+    font-size: 3vw;
+    margin-bottom: 10vw;
+}
+
+#TConnect{
+    background-color: #b7d26c;
+    border-radius: 100%;
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    top: .75vw;
+    left: 1vw;
+}
+
+

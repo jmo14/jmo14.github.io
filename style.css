@@ -13,6 +13,21 @@ a{
     text-align: center;
 }
 
+#MenuWrapper{
+    height: 5vw;
+    width: 5vw;
+    margin: 3vw;
+}
+
+#menu1{
+    height: .8vw;
+    width: 5vw;
+    background-color: white;
+    margin: 1vw;
+}
+
+
+
 .Name{
     font-family: Bebas;
     font-size: 27.7vw;
@@ -25,6 +40,74 @@ a{
     justify-content: flex-start;
     padding-left: 1.5vw;
     /* height: 100vh; */
+}
+
+#J:hover{
+    scale: 1.7;
+    transform: rotate(-10deg);
+    transition: transform .1s ease-in-out;
+}
+
+#H:hover{
+    scale: 1.5;
+    transform: rotate(20deg);
+    transition: transform .1s ease-in-out;
+}
+
+#A:hover{
+    scale: .7;
+    transform: rotate(-10deg);
+    transition: transform .1s ease-in-out;
+}
+
+#U:hover{
+    scale: 1.5;
+    transform: rotate(30deg);
+    transition: transform .2s ease-in-out;
+}
+
+#G:hover{
+    scale: 1.5;
+    transform: rotate(400deg);
+    transition: transform .7s ease-in-out;
+}
+
+#H2:hover{
+    scale: .5;
+    transform: rotate(-30deg);
+    transition: transform .1s ease-in-out;
+}
+
+#A2:hover{
+    scale: 1.5;
+    transform: rotate(20deg);
+    transition: transform .1s ease-in-out;
+}
+
+#N:hover{
+    scale: .85;
+    transform: rotate(-20deg);
+    transition: transform .1s ease-in-out;
+}
+#E:hover{
+    scale: 1.2;
+    transform: rotate(20deg);
+    transition: transform .1s ease-in-out;
+}
+#S:hover{
+    scale: 1.5;
+    transform: rotate(340deg);
+    transition: transform .6s ease-in-out;
+}
+#S2:hover{
+    scale: .5;
+    transform: rotate(-10deg);
+    transition: transform .1s ease-in-out;
+}
+#Y:hover{
+    scale: 1.8;
+    transform: rotate(-20deg);
+    transition: transform .1s ease-in-out;
 }
 
 .sectors{
@@ -73,14 +156,15 @@ a{
 
 }
 
-#white{
+.white{
+    transition: 500ms;
     height: 300vh;
     width: 100vw;
     top: 0vw;
     background-color: rgba(255, 255, 255, .5);
     z-index: -10;
     position: absolute;
-    display: none;
+    opacity: 0;
     margin: -2vw;
 }
 
@@ -95,21 +179,29 @@ a{
     z-index: 2;
 }
 
-#S1A1Wrapper:hover ~ #white{
-    display: block;
+.A1Wrapper:hover ~ .white{
+    opacity: 1;
+}
+
+h1{
+    font-size: 4vw;
+    margin-top: -1vw;
+    font-family: bebas;
+    color: #8CAF6E;
 }
 
 .info{
     height: 38vw;
     width: 40vw;
     background-color: white;
-    font-size: 3vw;
+    font-size: 2.5vw;
     padding: 4vw;
     position: absolute;
     display: none;
     border-radius: 1vw;
     margin-left: 48vw;
     margin-top: -11.5vw;
+    
 }
 
 #S1A1Wrapper:hover + .info{
@@ -157,6 +249,5 @@ a{
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: -.78vw;
     text-align: center;
-    margin-top: 20vw;
-    left: 60vw;
+    margin: 14vw;
 }

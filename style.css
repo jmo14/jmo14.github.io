@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Bebas;
+    src: url(BebasNeue-Regular.ttf);
+}
+
+body{
+    background-color: #8CAF6E;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.Name{
+    font-family: Bebas;
+    font-size: 27.7vw;
+    color: rgba(255, 255, 255, 0.8);
+    margin: -1.29vw;
+}
+
+#NameWrapper{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.5vw;
+    /* height: 100vh; */
+}
+
+.sectors{
+    font-family: Bebas;
+    font-size: 22vw;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -.78vw;
+    text-align: center;
+    margin-top: 15vw;
+}
+
+#sectors2{
+    margin-top: -4vw;
+}
+
+.title{
+    font-family: Bebas;
+    font-size: 5vw;
+    color: rgba(140, 175, 110, .8); 
+    text-align: center;
+}
+
+.pic{
+    height: 15vw;
+    width:23vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 1vw;
+    margin: 1vw;
+}
+
+#SectionWrapper{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.5vw; 
+    margin-top: -37vw;
+}
+
+.A1Wrapper{
+    height: 23vw;
+    width: 25vw;
+    background-color: white;
+    border-radius: 1vw;
+    margin-left: 5.5vw;
+
+}
+
+#white{
+    height: 300vh;
+    width: 100vw;
+    top: 0vw;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: -10;
+    position: absolute;
+    display: none;
+    margin: -2vw;
+}
+
+#S1A1{
+    background-image: url(S1A1.png);
+}
+
+
+#S1A1Wrapper:hover{
+    scale: 2;
+    transform: translateX(4vw);
+    z-index: 2;
+}
+
+#S1A1Wrapper:hover ~ #white{
+    display: block;
+}
+
+.info{
+    height: 38vw;
+    width: 40vw;
+    background-color: white;
+    font-size: 3vw;
+    padding: 4vw;
+    position: absolute;
+    display: none;
+    border-radius: 1vw;
+    margin-left: 48vw;
+    margin-top: -11.5vw;
+}
+
+#S1A1Wrapper:hover + .info{
+    display: block;
+}
+
+
+#S1A2{
+    background-image: url(S1A2.png);
+}
+
+#S1A3{
+    background-image: url(S1A3.png);
+}
+
+#S2A1{
+    background-image: url(S2A1.png);
+}
+
+
+#S2A2{
+    background-image: url(S2A2.png);
+}
+
+#S2A3{
+    background-image: url(S2A3.png);
+}
+
+#S3A1{
+    background-image: url(S3A1.png);
+}
+
+
+#S3A2{
+    background-image: url(S3A2.png);
+}
+
+#S3A3{
+    background-image: url(S3A3.png);
+}
+
+#responses{
+    font-family: Bebas;
+    font-size: 22vw;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -.78vw;
+    text-align: center;
+    margin-top: 20vw;
+    left: 60vw;
+}

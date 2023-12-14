@@ -13,21 +13,6 @@ a{
     text-align: center;
 }
 
-#MenuWrapper{
-    height: 5vw;
-    width: 5vw;
-    margin: 3vw;
-}
-
-#menu1{
-    height: .8vw;
-    width: 5vw;
-    background-color: white;
-    margin: 1vw;
-}
-
-
-
 .Name{
     font-family: Bebas;
     font-size: 27.7vw;
@@ -39,6 +24,7 @@ a{
     display: flex;
     justify-content: flex-start;
     padding-left: 1.5vw;
+    margin-top: 10vw;
     /* height: 100vh; */
 }
 
@@ -112,7 +98,7 @@ a{
 
 .sectors{
     font-family: Bebas;
-    font-size: 22vw;
+    font-size: 15vw;
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: -.78vw;
     text-align: center;
@@ -125,31 +111,34 @@ a{
 
 .title{
     font-family: Bebas;
-    font-size: 5vw;
+    font-size: 3vw;
     color: rgba(140, 175, 110, .8); 
     text-align: center;
+    letter-spacing: .15vw;
 }
 
 .pic{
-    height: 15vw;
-    width:23vw;
+    height: 10vw;
+    width:15vw;
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    border-radius: 1vw;
-    margin: 1vw;
+    border-radius: 1vw 1vw 0vw 0vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: .25vw;
 }
 
 #SectionWrapper{
     display: flex;
     justify-content: flex-start;
-    padding-left: 1.5vw; 
-    margin-top: -37vw;
+    padding-left: 14.5vw; 
+    margin-top: -24vw;
 }
 
 .A1Wrapper{
-    height: 23vw;
-    width: 25vw;
+    height: 15vw;
+    width: 17vw;
     background-color: white;
     border-radius: 1vw;
     margin-left: 5.5vw;
@@ -158,89 +147,166 @@ a{
 
 .white{
     transition: 500ms;
-    height: 300vh;
+    height: 400vh;
     width: 100vw;
     top: 0vw;
     background-color: rgba(255, 255, 255, .5);
     z-index: -10;
     position: absolute;
     opacity: 0;
-    margin: -2vw;
-}
-
-#S1A1{
-    background-image: url(S1A1.png);
-}
-
-
-#S1A1Wrapper:hover{
-    scale: 2;
-    transform: translateX(4vw);
-    z-index: 2;
+    margin: -15vw;
 }
 
 .A1Wrapper:hover ~ .white{
     opacity: 1;
 }
 
+.A1Wrapper:hover{
+    background-color: #8CAF6E;
+}
+
 h1{
-    font-size: 4vw;
+    font-size: 3vw;
     margin-top: -1vw;
     font-family: bebas;
     color: #8CAF6E;
 }
 
-.info{
-    height: 38vw;
-    width: 40vw;
+h3{
+    font-size: 15vw;
+    margin: 5vw;
+    text-align: center;
+    font-family: bebas;
+    color: white;
+}
+
+h4{
+    font-size: 5vw;
+    margin: 5vw;
+    text-align: center;
+    font-family: bebas;
+    color: #8CAF6E;
     background-color: white;
-    font-size: 2.5vw;
-    padding: 4vw;
+}
+
+p{
+    font-size: 2vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: -2vw;
+}
+
+h5{
+    font-size: 2vw;
+    margin-top: -2vw;
+    margin-left: 5vw;
+    font-family: bebas;
+    color: white;
     position: absolute;
-    display: none;
-    border-radius: 1vw;
-    margin-left: 48vw;
-    margin-top: -11.5vw;
-    
 }
 
-#S1A1Wrapper:hover + .info{
-    display: block;
+#space{
+    height: 10vw;
+    width: 100vw;
+    position: absolute;
 }
 
+
+/* Assignments */
+
+.Info{
+    width: 70vw;
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: white;
+    opacity: 0;
+    margin-left: .5vw;
+    padding: 2vw;
+    position: absolute;
+    margin-top: 10vw;
+    transition: .3s ease-out;
+}
+
+
+#S1A1{
+    background-image: url(S1A1.png);
+}
+
+
+#S1A1Wrapper:hover + #S1A1Info{
+    opacity: 1;
+    transition: .3s ease-in;
+}
 
 #S1A2{
     background-image: url(S1A2.png);
+}
+
+#S1A2Wrapper:hover + #S1A2Info{
+    opacity: 1;
+    transition: .3s ease-in;
 }
 
 #S1A3{
     background-image: url(S1A3.png);
 }
 
+#S1A3Wrapper:hover + #S1A3Info{
+    opacity: 1;
+    transition: .3s ease-in;
+}
+
 #S2A1{
     background-image: url(S2A1.png);
 }
 
+#S2A1Wrapper:hover + #S2A1Info{
+    opacity: 1;
+    transition: .3s ease-in;
+}
 
 #S2A2{
     background-image: url(S2A2.png);
+}
+
+#S2A2Wrapper:hover + #S2A2Info{
+    opacity: 1;
+    transition: .3s ease-in;
 }
 
 #S2A3{
     background-image: url(S2A3.png);
 }
 
+#S2A3Wrapper:hover + #S2A3Info{
+    opacity: 1;
+    transition: .3s ease-in;
+}
+
 #S3A1{
     background-image: url(S3A1.png);
 }
 
+#S3A1Wrapper:hover + #S3A1Info{
+    opacity: 1;
+    transition: .3s ease-in;
+}
 
 #S3A2{
     background-image: url(S3A2.png);
 }
 
+#S3A2Wrapper:hover + #S3A2Info{
+    opacity: 1;
+    transition: .3s ease-in;
+}
+
 #S3A3{
     background-image: url(S3A3.png);
+}
+#S3A3Wrapper:hover + #S3A3Info{
+    opacity: 1;
+    transition: .3s ease-in;
 }
 
 #responses{
@@ -249,5 +315,11 @@ h1{
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: -.78vw;
     text-align: center;
-    margin: 14vw;
+    margin-top: 30vw;
+    margin-left: 1.5vw;
+    position: absolute;
+}
+
+#responses:hover{
+    color: white;
 }

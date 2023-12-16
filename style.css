@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #8CAF6E;
+    background-color: #903df5;
     margin: 0;
 }
 
@@ -112,7 +112,7 @@ a{
 .title{
     font-family: Bebas;
     font-size: 3vw;
-    color: rgba(140, 175, 110, .8); 
+    color: #903df5; 
     text-align: center;
     letter-spacing: .15vw;
 }
@@ -162,14 +162,14 @@ a{
 }
 
 .A1Wrapper:hover{
-    background-color: #8CAF6E;
+    background-color: #903df5;
 }
 
 h1{
     font-size: 3vw;
     margin-top: -1vw;
     font-family: bebas;
-    color: #8CAF6E;
+    color: #903df5;
 }
 
 h3{
@@ -185,7 +185,7 @@ h4{
     margin: 5vw;
     text-align: center;
     font-family: bebas;
-    color: #8CAF6E;
+    color: #903df5;
     background-color: white;
 }
 
@@ -194,6 +194,7 @@ p{
     padding-left: 10vw;
     padding-right: 10vw;
     margin-top: -2vw;
+    color:white;
 }
 
 h5{
